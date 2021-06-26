@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { Header } from './components/Header/Header';
+import styled from 'styled-components/macro';
+import { MainNav } from './components/MainNav/MainNav';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Container } from '@material-ui/core';
+import { Trending } from './Pages/Trending/Trending';
+import { Movies } from './Pages/Movies/Movies';
+import { Series } from './Pages/Series/Series';
+import { Search } from './Pages/Search/Search';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <AppWrapp>
+        <Container>
+          <Switch>
+            <Route path="/" component={Trending} exact />
+            <Route path="/movies" component={Movies} />
+            <Route path="/series" component={Series} />
+            <Route path="/search" component={Search} />
+          </Switch>
+        </Container>
+      </AppWrapp>
+      <MainNav />
+    </BrowserRouter>
   );
-}
+};
 
-export default App;
+const AppWrapp = styled.div`
+  min-height: 100vh;
+  background: #39445a;
+  color: #ffffff;
+  padding: 10px 0 100px;
+`;
