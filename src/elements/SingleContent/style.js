@@ -4,9 +4,9 @@ export const SingleCard = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
   padding: 5px;
-  /* margin: 5px 0;
+  margin: 0 auto;
   background-color: #282c34;
   border-radius: 10px;
   position: relative;
@@ -18,9 +18,9 @@ export const SingleCard = styled.div`
     color: black;
   }
 
-  @media (max-width: 550px) {
-    width: 46%;
-  } */
+  @media (max-width: 675px) {
+    max-width: 300px;
+  }
 `;
 
 export const CardImage = styled.img`

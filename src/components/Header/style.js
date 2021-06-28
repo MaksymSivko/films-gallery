@@ -26,11 +26,11 @@ export const Span = styled.span`
 export const UnderLine = styled.div`
   width: 100%;
   height: 100%;
-  min-height: 7.2vw;
+  min-height: 6.3vw;
   background: #fff;
 
   @media (max-width: 1000px) {
-    min-height: 11.5vw;
+    min-height: 10vw;
   }
 
   @media (max-width: 600px) {

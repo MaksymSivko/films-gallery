@@ -12,8 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     font-style: normal;
   }
 
-  ${
-    '' /* *{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,6 +29,6 @@ export const GlobalStyle = createGlobalStyle`
   a{
     text-decoration: none;
     color: #000;
-  } */
-  }
+  } 
+  
 `;

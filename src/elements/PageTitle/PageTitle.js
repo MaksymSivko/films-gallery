@@ -7,7 +7,7 @@ export const PageTitle = ({ title }) => {
 const TitleWrapper = styled.div`
   text-transform: uppercase;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   font-size: 2vw;
   padding: 15px 0;
   color: #ffffff;

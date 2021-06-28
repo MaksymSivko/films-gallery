@@ -23,7 +23,7 @@ export const Trending = () => {
 
   return (
     <>
-      {/* <PageTitle title="Trending" /> */}
+      <PageTitle title="Trending" />
       <TrendingContainet>
         {content &&
           content.map((elem) => (
@@ -38,7 +38,7 @@ export const Trending = () => {
             />
           ))}
       </TrendingContainet>
-      {/* <CustomPagination setPage={setPage} /> */}
+      <CustomPagination setPage={setPage} />
     </>
   );
 };
