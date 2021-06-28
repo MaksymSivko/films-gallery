@@ -3,9 +3,10 @@ import styled from 'styled-components/macro';
 export const SingleCard = styled.div`
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 100%;
+  max-width: 400px;
   padding: 5px;
-  margin: 5px 0;
+  /* margin: 5px 0;
   background-color: #282c34;
   border-radius: 10px;
   position: relative;
@@ -19,7 +20,7 @@ export const SingleCard = styled.div`
 
   @media (max-width: 550px) {
     width: 46%;
-  }
+  } */
 `;
 
 export const CardImage = styled.img`

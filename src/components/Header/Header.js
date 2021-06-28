@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <>
       <Container onClick={() => window.scroll(0, 0)}>
-        <Span>Entertaiment Hub</Span>
+        <Span>Films Gallery</Span>
       </Container>
       <UnderLine />
     </>

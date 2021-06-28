@@ -9,7 +9,7 @@ const TitleWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
   font-size: 2vw;
-  padding: 4px;
+  padding: 15px 0;
   color: #ffffff;
 
   @media (max-width: 1000px) {
