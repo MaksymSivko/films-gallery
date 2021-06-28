@@ -37,3 +37,11 @@ export const UnderLine = styled.div`
     min-height: 12.5vw;
   }
 `;
+
+// export const GoUp = styled.a`
+//   position: fixed;
+//   right: 30px;
+//   bottom: 70px;
+//   z-index: 50;
+//   color: #ffffff;
+// `;

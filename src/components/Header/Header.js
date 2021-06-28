@@ -7,7 +7,9 @@ export const Header = () => {
       <Container onClick={() => window.scroll(0, 0)}>
         <Span>Films Gallery</Span>
       </Container>
-      <UnderLine />
+      <UnderLine id="gotoup" />
+
+      {/* <GoUp href="#gotoup">go up</GoUp> */}
     </>
   );
 };
