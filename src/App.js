@@ -1,11 +1,11 @@
 import styled from 'styled-components/macro';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Header } from './components/Header/Header';
 import { MainNav } from './components/MainNav/MainNav';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Trending } from './Pages/Trending/Trending';
 import { Movies } from './Pages/Movies/Movies';
 import { Series } from './Pages/Series/Series';
 import { Search } from './Pages/Search/Search';
+import { Trending } from './Pages/Trending/Trending';
 
 export const App = () => {
   return (

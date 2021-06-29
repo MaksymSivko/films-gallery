@@ -11,11 +11,8 @@ import { useHistory } from 'react-router-dom';
 const useStyles = makeStyles({
   root: {
     width: '100%',
-    // height: '60px',
     position: 'fixed',
     bottom: 0,
-    // left: 0,
-    // right: 0,
     backgroundColor: '#2d313a',
     zIndex: 100,
   },
@@ -24,7 +21,6 @@ const useStyles = makeStyles({
 export const MainNav = () => {
   const classes = useStyles();
   const [value, setValue] = useState(0);
-
   const history = useHistory();
 
   useEffect(() => {

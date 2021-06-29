@@ -2,9 +2,10 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { PageTitle } from './../../elements/PageTitle/PageTitle';
 import { CustomPagination } from './../../elements/CustomPagination/CustomPagination';
-import styled from 'styled-components';
+
 import { SingleContent } from './../../elements/SingleContent/SingleContent';
 import { Genres } from './../../components/Genres/Genres';
+import { MoviesContainet } from './style';
 
 export const Movies = () => {
   const [page, setPage] = useState(1);
@@ -61,21 +62,3 @@ export const Movies = () => {
     </>
   );
 };
-
-const MoviesContainet = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-
-  @media (max-width: 1300px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media (max-width: 1000px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 675px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-`;

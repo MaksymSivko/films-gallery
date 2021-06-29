@@ -19,7 +19,10 @@ export const SingleCard = styled.div`
   }
 
   @media (max-width: 675px) {
-    max-width: 300px;
+    max-width: 360px;
+  }
+  @media (max-width: 374px) {
+    max-width: 280px;
   }
 `;
 
@@ -32,6 +35,7 @@ export const CardTitle = styled.b`
   text-align: center;
   font-size: 17px;
   padding: 8px 0;
+  flex: 1 0 auto;
 `;
 
 export const CardMedia = styled.span`

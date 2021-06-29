@@ -1,7 +1,6 @@
 import React from 'react';
-import Pagination from '@material-ui/lab/Pagination';
-import styled from 'styled-components/macro';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core';
+import { PaginationWrap } from './style';
 
 const darkTheme = createMuiTheme({
   palette: {
@@ -12,7 +11,7 @@ const darkTheme = createMuiTheme({
 export const CustomPagination = ({ numberOfPages = 10, setPage }) => {
   const handlePagaChange = (page) => {
     setPage(page);
-    window.scroll(0, 0, 'smooth');
+    window.scroll(0, 0);
   };
 
   return (
@@ -26,10 +25,3 @@ export const CustomPagination = ({ numberOfPages = 10, setPage }) => {
     </ThemeProvider>
   );
 };
-
-const PaginationWrap = styled(Pagination)`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 20px 0 0 0;
-`;

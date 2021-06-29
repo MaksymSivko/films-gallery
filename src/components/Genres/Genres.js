@@ -1,7 +1,6 @@
-import { Chip } from '@material-ui/core';
 import axios from 'axios';
 import { useEffect } from 'react';
-import styled from 'styled-components/macro';
+import { Containet, ChipWrap } from './style';
 
 export const Genres = ({
   type,
@@ -65,11 +64,3 @@ export const Genres = ({
     </Containet>
   );
 };
-
-const Containet = styled.div`
-  padding: 6px 0;
-`;
-
-const ChipWrap = styled(Chip)`
-  margin: 4px !important;
-`;
