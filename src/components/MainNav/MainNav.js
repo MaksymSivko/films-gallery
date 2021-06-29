@@ -23,11 +23,17 @@ export const MainNav = () => {
   const [value, setValue] = useState(0);
   const history = useHistory();
 
+  const upAndPush = (route) => {
+    window.scroll(0, 0);
+    history.push(route);
+  };
+
   useEffect(() => {
-    if (value === 0) history.push('/');
-    if (value === 1) history.push('/movies');
-    if (value === 2) history.push('/series');
-    if (value === 3) history.push('/search');
+    if (value === 0) upAndPush('/');
+    if (value === 1) upAndPush('/movies');
+    if (value === 2) upAndPush('/series');
+    if (value === 3) upAndPush('/search');
+    // eslint-disable-next-line
   }, [value, history]);
 
   return (
