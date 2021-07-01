@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useEffect } from 'react';
-import { Containet, ChipWrap } from './style';
+import { ChipWrap, Containet } from './style';
 
 export const Genres = ({
   type,

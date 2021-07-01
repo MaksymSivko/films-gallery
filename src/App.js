@@ -1,10 +1,10 @@
-import styled from 'styled-components/macro';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import styled from 'styled-components/macro';
 import { Header } from './components/Header/Header';
 import { MainNav } from './components/MainNav/MainNav';
 import { Movies } from './Pages/Movies/Movies';
-import { Series } from './Pages/Series/Series';
 import { Search } from './Pages/Search/Search';
+import { Series } from './Pages/Series/Series';
 import { Trending } from './Pages/Trending/Trending';
 
 export const App = () => {

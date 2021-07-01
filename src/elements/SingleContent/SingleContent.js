@@ -1,7 +1,7 @@
+import { Badge } from '@material-ui/core';
 import React from 'react';
 import { img_300, unavailable } from './../../config/config';
-import { SingleCard, CardImage, CardTitle, CardMedia } from './style';
-import { Badge } from '@material-ui/core';
+import { CardImage, CardMedia, CardTitle, SingleCard } from './style';
 
 export const SingleContent = ({
   posters,

@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { PageTitle } from './../../elements/PageTitle/PageTitle';
 import { SingleContent } from '../../elements/SingleContent/SingleContent';
 import { CustomPagination } from './../../elements/CustomPagination/CustomPagination';
+import { PageTitle } from './../../elements/PageTitle/PageTitle';
 import { TrendingContainet } from './style';
 
 export const Trending = () => {

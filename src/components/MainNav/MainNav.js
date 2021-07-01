@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import { makeStyles } from '@material-ui/core/styles';
 import MovieIcon from '@material-ui/icons/Movie';
 import SearchIcon from '@material-ui/icons/Search';
-import WhatshotIcon from '@material-ui/icons/Whatshot';
 import TvIcon from '@material-ui/icons/Tv';
+import WhatshotIcon from '@material-ui/icons/Whatshot';
+import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles({

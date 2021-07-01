@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, UnderLine, Span } from './style';
+import { Container, Span, UnderLine } from './style';
 
 export const Header = () => {
   return (
